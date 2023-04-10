@@ -10,6 +10,11 @@ sudo apt update -y && sudo apt upgrade -y
 sudo timedatectl set-timezone America/Sao_Paulo
 ```
 
+sudo rm -rf /usr/lib/python3/dist-packages/OpenSSL
+sudo pip install -U pyopen
+ssl
+sudo pip install Flask
+
 ### Instala dependências
 ```sh
 sudo apt-get install build-essential libssl-dev libffi-dev python3-dev python3-pip libsasl2-dev libldap2-dev default-libmysqlclient-dev -y
