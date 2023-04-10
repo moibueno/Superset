@@ -15,7 +15,7 @@ sudo timedatectl set-timezone America/Sao_Paulo
 sudo apt-get install build-essential libssl-dev libffi-dev python3-dev python3-pip libsasl2-dev libldap2-dev default-libmysqlclient-dev -y
 ```
 
-## Isntala Superset
+## Instala Superset
 ```sh
 sudo pip install apache-superset
 ```
@@ -44,3 +44,4 @@ sudo pip install apache-superset
 
 ```
 
+https://superset.apache.org/docs/installation/installing-superset-from-scratch/
