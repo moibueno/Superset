@@ -53,7 +53,7 @@ vi /etc/profile
 ```
 
 ```sh
-cd /usr/local/lib/python3.8/dist-packages/superset
+cd /home/moibueno/.local/lib/python3.8/site-packages/superset
 ```
 ```sh
 sudo mkdir /opt/superset
@@ -61,7 +61,7 @@ sudo chown
 openssl rand -base64 42
 ```
 ```sh
-sudo vi /usr/local/lib/python3.8/dist-packages/superset/superset_config.py
+vi/home/moibueno/.local/lib/python3.8/site-packages/superset/superset_config.py
 ```
 ## Setup Superset
 
