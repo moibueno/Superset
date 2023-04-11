@@ -28,43 +28,32 @@ sudo rm -rf /usr/lib/python3/dist-packages/OpenSSL
 pip install -U pyopenssl
 ```
 ```sh
-pip install Flask
+pip install Flask psycopg2
 ```
 ## Instala Superset
 ```sh
 pip install apache-superset
 ```
-
 ```sh
-echo "export FLASK_APP=superset" >> ~/.bashrc
+vi ~/.bashrc
 ```
 ```sh
-sudo su
-echo "export FLASK_APP=superset" >> /etc/profile
-exit
-```
-```sh
+export FLASK_APP=superset
 export SUPERSET_SECRET_KEY="BYnGB/xrhU9jhOzFvOP6dqdue10ycBo6+jXe748bgwyuQp7fNg8ySLbH"
+PATH=$PATH:/home/moibueno/.local/bin
+expot PATH
 ```
-
-```sh
-echo "export FLASK_APP=superset" >> ~/.bashrc
-vi /etc/profile
-```
-
 ```sh
 cd /home/moibueno/.local/lib/python3.8/site-packages/superset
 ```
 ```sh
 sudo mkdir /opt/superset
-sudo chown 
-openssl rand -base64 42
+sudo chown moibueno /opt/superset
 ```
 ```sh
 vi/home/moibueno/.local/lib/python3.8/site-packages/superset/superset_config.py
 ```
 ## Setup Superset
-
 ```sh
 # Superset specific config
 ROW_LIMIT = 5000
@@ -77,7 +66,7 @@ SUPERSET_WEBSERVER_PORT = 80
 # Make sure you are changing this key for your deployment with a strong key.
 # You can generate a strong key using `openssl rand -base64 42`.
 # Alternatively you can set it with `SUPERSET_SECRET_KEY` environment variable.
-SECRET_KEY = 'YOUR_OWN_RANDOM_GENERATED_SECRET_KEY'
+SECRET_KEY = 'BYnGB/xrhU9jhOzFvOP6dqdue10ycBo6+jXe748bgwyuQp7fNg8ySLbH'
 
 # The SQLAlchemy connection string to your database backend
 # This connection defines the path to the database that stores your
@@ -96,11 +85,6 @@ WTF_CSRF_TIME_LIMIT = 60 * 60 * 24 * 365
 # Set this API key to enable Mapbox visualizations
 MAPBOX_API_KEY = ''```sh
 ```
-
-```sh
-export SUPERSET_SECRET_KEY="BYnGB/xrhU9jhOzFvOP6dqdue10ycBo6+jXe748bgwyuQp7fNg8ySLbH"
-```
-
 ```sh
 cd ~/.superset
 ```
