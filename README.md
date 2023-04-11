@@ -76,6 +76,8 @@ SECRET_KEY = 'BYnGB/xrhU9jhOzFvOP6dqdue10ycBo6+jXe748bgwyuQp7fNg8ySLbH'
 #SQLALCHEMY_DATABASE_URI = 'sqlite:////opt/superset/superset.db'
 SQLALCHEMY_DATABASE_URI = 'postgresql:////superset:c4rv4lh0@192.168.0.135//superset'
 
+COMPRESS_REGISTER = False
+
 # Flask-WTF flag for CSRF
 WTF_CSRF_ENABLED = True
 # Add endpoints that need to be exempt from CSRF protection
