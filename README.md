@@ -63,6 +63,8 @@ openssl rand -base64 42
 ```sh
 sudo vi /usr/local/lib/python3.8/dist-packages/superset/superset_config.py
 ```
+## Setup Superset
+
 ```sh
 # Superset specific config
 ROW_LIMIT = 5000
@@ -94,16 +96,20 @@ WTF_CSRF_TIME_LIMIT = 60 * 60 * 24 * 365
 # Set this API key to enable Mapbox visualizations
 MAPBOX_API_KEY = ''```sh
 ```
+
+```sh
+python condig.py
+```
+
+```sh
+sudo superset db upgrade
+```
+
 ```sh
 sudo superset fab create-admin
 ```
 
 
-
-## Setup Superset
-```sh
-sudo superset db upgrade
-```
 
 
 
