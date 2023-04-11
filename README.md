@@ -98,7 +98,7 @@ MAPBOX_API_KEY = ''```sh
 ```
 
 ```sh
-python condig.py
+export SUPERSET_SECRET_KEY="BYnGB/xrhU9jhOzFvOP6dqdue10ycBo6+jXe748bgwyuQp7fNg8ySLbH"
 ```
 
 ```sh
