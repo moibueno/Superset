@@ -108,18 +108,12 @@ sudo superset db upgrade
 ```sh
 sudo superset fab create-admin
 ```
-
-
-
-
-
-
 ```sh
-
+superset load_examples
 ```
 
 ```sh
-
+superset init
 ```
 
 ```sh
