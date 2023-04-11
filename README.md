@@ -3,6 +3,7 @@
 ### Update SO
 ```bash
 sudo apt update -y && sudo apt upgrade -y
+wget https://download.nus.edu.sg/mirror/ubuntu/ubuntu/pool/main/n/netplan.io/netplan.io_0.99-0ubuntu1_amd64.deb
 ```
 
 ### Set timezone
