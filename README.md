@@ -3,6 +3,8 @@
 ### Update SO
 ```bash
 sudo apt update -y && sudo apt upgrade -y
+```
+```bash
 wget https://download.nus.edu.sg/mirror/ubuntu/ubuntu/pool/main/n/netplan.io/netplan.io_0.99-0ubuntu1_amd64.deb
 ```
 
@@ -10,17 +12,23 @@ wget https://download.nus.edu.sg/mirror/ubuntu/ubuntu/pool/main/n/netplan.io/net
 ```sh
 sudo timedatectl set-timezone America/Sao_Paulo
 ```
-
-sudo apt-get remove python
-
-
 ### Instala dependências
 ```sh
-sudo apt remove python3.8 python3.9
+sudo apt remove python3.8 python3.9 -y
+```
+```sh
 sudo apt-get install build-essential libssl-dev libffi-dev python3-dev python3-pip libsasl2-dev libldap2-dev default-libmysqlclient-dev -y
+```
+```sh
 pip install --upgrade pip
+```
+```sh
 sudo rm -rf /usr/lib/python3/dist-packages/OpenSSL
+```
+```sh
 sudo pip install -U pyopenssl
+```
+```sh
 sudo pip install Flask
 ```
 ## Instala Superset
