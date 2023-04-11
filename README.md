@@ -117,20 +117,8 @@ superset init
 ```
 
 ```sh
-perset run -p 8088 --with-threads --reload --debugger
+sperset run -h 0.0.0.0 -p 8088 --with-threads --reload --debugger
 ```
 
-```sh
-
-```
-
-```sh
-
-```
-
-```sh
-
-```
-
-https://musaamin.web.id/install-superset-data-visualization-ubuntu/
+https://musaamin.web.id/install-superset-data-visualization-ubuntu/  
 https://superset.apache.org/docs/installation/installing-superset-from-scratch/
