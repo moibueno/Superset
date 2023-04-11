@@ -36,13 +36,17 @@ sudo pip install apache-superset
 ```
 
 ```sh
-echo "export FLASK_APP=superset" >> ~/.bashrc
+echo "export FLASK_APP=superset" >> ~/.bashrcexport SUPERSET_SECRET_KEY="BYnGB/xrhU9jhOzFvOP6dqdue10ycBo6+jXe748bgwyuQp7fNg8ySLbH"
 ```
 ```sh
 sudo su
 echo "export FLASK_APP=superset" >> /etc/profile
 exit
 ```
+```sh
+export SUPERSET_SECRET_KEY="BYnGB/xrhU9jhOzFvOP6dqdue10ycBo6+jXe748bgwyuQp7fNg8ySLbH"
+```
+
 ```sh
 echo "export FLASK_APP=superset" >> ~/.bashrc
 vi /etc/profile
@@ -65,7 +69,7 @@ sudo vi /usr/local/lib/python3.8/dist-packages/superset/superset_config.py
 # Superset specific config
 ROW_LIMIT = 5000
 
-SUPERSET_WEBSERVER_PORT = 8088
+SUPERSET_WEBSERVER_PORT = 80
 
 # Flask App Builder configuration
 # Your App secret key will be used for securely signing the session cookie
