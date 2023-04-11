@@ -102,6 +102,9 @@ export SUPERSET_SECRET_KEY="BYnGB/xrhU9jhOzFvOP6dqdue10ycBo6+jXe748bgwyuQp7fNg8y
 ```
 
 ```sh
+cd ~/.superset
+```
+```sh
 superset db upgrade
 ```
 
