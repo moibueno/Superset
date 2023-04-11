@@ -40,6 +40,15 @@ sudo pip install apache-superset
 ```
 
 ```sh
+echo "export FLASK_APP=superset" >> ~/.bashrc
+```
+```sh
+sudo su
+echo "export FLASK_APP=superset" >> /etc/profile
+exit
+```
+
+echo "export FLASK_APP=superset" >> ~/.bashrc
 vi /etc/profile
 ```
 export FLASK_APP=superset
