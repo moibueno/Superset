@@ -17,7 +17,7 @@ sudo timedatectl set-timezone America/Sao_Paulo
 sudo apt remove python3.8 python3.9 -y
 ```
 ```sh
-sudo apt-get install build-essential libssl-dev libffi-dev python3-dev python3-pip libsasl2-dev libldap2-dev default-libmysqlclient-dev -y
+sudo apt-get install build-essential libssl-dev libffi-dev python3-dev python3-pip libsasl2-dev libldap2-dev default-libmysqlclient-dev nginx -y
 ```
 ```sh
 sudo apt install netplan.io -y
@@ -117,7 +117,7 @@ superset init
 ```
 
 ```sh
-
+perset run -p 8088 --with-threads --reload --debugger
 ```
 
 ```sh
