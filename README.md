@@ -20,6 +20,9 @@ sudo apt remove python3.8 python3.9 -y
 sudo apt-get install build-essential libssl-dev libffi-dev python3-dev python3-pip libsasl2-dev libldap2-dev default-libmysqlclient-dev -y
 ```
 ```sh
+sudo apt install netplan.io -y
+```
+```sh
 pip install --upgrade pip
 ```
 ```sh
