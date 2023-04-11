@@ -51,7 +51,7 @@ sudo mkdir /opt/superset
 sudo chown moibueno /opt/superset
 ```
 ```sh
-vi/home/moibueno/.local/lib/python3.8/site-packages/superset/superset_config.py
+vi /home/moibueno/.local/lib/python3.8/site-packages/superset/superset_config.py
 ```
 ## Setup Superset
 ```sh
@@ -104,7 +104,7 @@ superset init
 ```
 
 ```sh
-sperset run -h 0.0.0.0 -p 8088 --with-threads --reload --debugger
+sperset run -h 0.0.0.0 -p 80 --with-threads --reload --debugger
 ```
 
 https://musaamin.web.id/install-superset-data-visualization-ubuntu/  
