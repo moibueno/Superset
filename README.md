@@ -22,9 +22,6 @@ sudo apt install netplan.io -y
 pip install --upgrade pip
 ```
 ```sh
-sudo rm -rf /usr/lib/python3/dist-packages/OpenSSL
-```
-```sh
 pip install -U pyopenssl
 ```
 ```sh
