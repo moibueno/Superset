@@ -25,14 +25,14 @@ pip install --upgrade pip
 sudo rm -rf /usr/lib/python3/dist-packages/OpenSSL
 ```
 ```sh
-sudo pip install -U pyopenssl
+pip install -U pyopenssl
 ```
 ```sh
-sudo pip install Flask
+pip install Flask
 ```
 ## Instala Superset
 ```sh
-sudo pip install apache-superset
+pip install apache-superset
 ```
 
 ```sh
@@ -102,11 +102,11 @@ export SUPERSET_SECRET_KEY="BYnGB/xrhU9jhOzFvOP6dqdue10ycBo6+jXe748bgwyuQp7fNg8y
 ```
 
 ```sh
-sudo superset db upgrade
+superset db upgrade
 ```
 
 ```sh
-sudo superset fab create-admin
+superset fab create-admin
 ```
 ```sh
 superset load_examples
