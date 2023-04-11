@@ -36,7 +36,7 @@ sudo pip install apache-superset
 ```
 
 ```sh
-echo "export FLASK_APP=superset" >> ~/.bashrcexport SUPERSET_SECRET_KEY="BYnGB/xrhU9jhOzFvOP6dqdue10ycBo6+jXe748bgwyuQp7fNg8ySLbH"
+echo "export FLASK_APP=superset" >> ~/.bashrc
 ```
 ```sh
 sudo su
