@@ -87,7 +87,7 @@ WTF_CSRF_TIME_LIMIT = 60 * 60 * 24 * 365
 MAPBOX_API_KEY = ''
 ```
 ```sh
-cd ~/.superset
+cd /home/moibueno/.local/lib/python3.8/site-packages
 ```
 ```sh
 superset db upgrade
