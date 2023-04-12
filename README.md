@@ -105,9 +105,10 @@ superset init
 ```
 
 ```sh
-superset run -h 0.0.0.0 -p 80 --with-threads --reload --debugger
+superset run -h 0.0.0.0 -p 8088 --with-threads --reload  
 ```
-sh
+```sh
+sudo su
 cat << EOF > /etc/systemd/system/superset.service 
 [Unit]
 Description = Apache Superset Webserver Daemon
@@ -121,16 +122,17 @@ Environment=SUPERSET_HOME=/home/moibueno/.local/bin
 Environment=PYTHONPATH=/home/moibueno/.local/lib/python3.8/site-packages/superset
 Environment=FLASK_APP=superset
 WorkingDirectory = /home/superset
-ExecStart =/home/moibueno/.local/bin/superset run -p 8088 -h  0.0.0.0:8888 --pid /home/moibueno/superset-webserver.PIDFile superset:app
+ExecStart =/home/moibueno/.local/bin/superset run -p 8088 -h  0.0.0.0 --with-threads
 ExecStop = /bin/kill -s TERM $MAINPID
 
 [Install]
 WantedBy=multi-user.target
 EOF
 ```
-
-
-
+```sh
+sudo systemctl start superset
+sudo systemctl enable superset
+```
 
 
 
