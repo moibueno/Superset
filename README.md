@@ -44,12 +44,13 @@ expot PATH
 cd /home/moibueno/.local/lib/python3.8/site-packages/superset
 ```
 ```sh
-sudo mkdir /opt/superset
-sudo chown moibueno /opt/superset
-```
-```sh
 vi /home/moibueno/.local/lib/python3.8/site-packages/superset/superset_config.py
 ```
+```sh
+python3 config.py
+```
+
+
 ## Setup Superset
 ```sh
 # Superset specific config
