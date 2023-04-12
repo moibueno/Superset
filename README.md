@@ -105,7 +105,7 @@ superset init
 ```
 
 ```sh
-sperset run -h 0.0.0.0 -p 80 --with-threads --reload --debugger
+superset run -h 0.0.0.0 -p 80 --with-threads --reload --debugger
 ```
 
 https://musaamin.web.id/install-superset-data-visualization-ubuntu/  
