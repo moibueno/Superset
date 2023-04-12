@@ -121,7 +121,7 @@ Group = moibueno
 Environment=SUPERSET_HOME=/home/moibueno/.local/bin
 Environment=PYTHONPATH=/home/moibueno/.local/lib/python3.8/site-packages/superset
 Environment=FLASK_APP=superset
-WorkingDirectory = /home/superset
+WorkingDirectory = /home/moibueno
 ExecStart =/home/moibueno/.local/bin/superset run -p 8088 -h  0.0.0.0 --with-threads
 ExecStop = /bin/kill -s TERM $MAINPID
 
