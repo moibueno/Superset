@@ -37,8 +37,8 @@ vi ~/.bashrc
 ```sh
 export FLASK_APP=superset
 export SUPERSET_SECRET_KEY="BYnGB/xrhU9jhOzFvOP6dqdue10ycBo6+jXe748bgwyuQp7fNg8ySLbH"
-PATH=$PATH:/home/moibueno/.local/bin
-expot PATH
+export PATH=$PATH:/home/moibueno/.local/bin
+export PYTHONPATH=/home/moibueno/.local/lib/python3.8/site-packages/superset
 ```
 ```sh
 cd /home/moibueno/.local/lib/python3.8/site-packages/superset
