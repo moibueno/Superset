@@ -72,7 +72,7 @@ SECRET_KEY = 'BYnGB/xrhU9jhOzFvOP6dqdue10ycBo6+jXe748bgwyuQp7fNg8ySLbH'
 # Note that the connection information to connect to the datasources
 # you want to explore are managed directly in the web UI
 #SQLALCHEMY_DATABASE_URI = 'sqlite:////opt/superset/superset.db'
-SQLALCHEMY_DATABASE_URI = 'postgresql:////superset:c4rv4lh0@192.168.0.192//superset'
+SQLALCHEMY_DATABASE_URI = 'postgresql://superset:c4rv4lh0@192.168.0.192/superset'
 
 COMPRESS_REGISTER = False
 
