@@ -13,7 +13,7 @@ sudo timedatectl set-timezone America/Sao_Paulo
 sudo apt remove python3.8 python3.9 -y
 ```
 ```sh
-sudo apt-get install build-essential libssl-dev libffi-dev python3-dev python3-pip libsasl2-dev libldap2-dev default-libmysqlclient-dev nginx libpq-dev -y
+sudo apt-get install build-essential libssl-dev libffi-dev python3-dev python3-pip libsasl2-dev libldap2-dev default-libmysqlclient-dev libpq-dev -y
 ```
 ```sh
 sudo apt install netplan.io -y
@@ -56,7 +56,7 @@ python3 config.py
 # Superset specific config
 ROW_LIMIT = 5000
 
-SUPERSET_WEBSERVER_PORT = 80
+SUPERSET_WEBSERVER_PORT = 8088
 
 # Flask App Builder configuration
 # Your App secret key will be used for securely signing the session cookie
@@ -107,6 +107,33 @@ superset init
 ```sh
 superset run -h 0.0.0.0 -p 80 --with-threads --reload --debugger
 ```
+sh
+cat << EOF > /etc/systemd/system/superset.service 
+[Unit]
+Description = Apache Superset Webserver Daemon
+After = network.target
+
+[Service]
+PIDFile = /home/moibueno/superset-webserver.PIDFile
+User = moibueno
+Group = moibueno
+Environment=SUPERSET_HOME=/home/moibueno/.local/bin
+Environment=PYTHONPATH=/home/moibueno/.local/lib/python3.8/site-packages/superset
+Environment=FLASK_APP=superset
+WorkingDirectory = /home/superset
+ExecStart =/home/moibueno/.local/bin/superset run -p 8088 -h  0.0.0.0:8888 --pid /home/moibueno/superset-webserver.PIDFile superset:app
+ExecStop = /bin/kill -s TERM $MAINPID
+
+[Install]
+WantedBy=multi-user.target
+EOF
+```
+
+
+
+
+
+
 
 https://musaamin.web.id/install-superset-data-visualization-ubuntu/  
 https://superset.apache.org/docs/installation/installing-superset-from-scratch/
