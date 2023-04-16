@@ -50,6 +50,11 @@ vi /home/moibueno/.local/lib/python3.8/site-packages/superset/superset_config.py
 python3 config.py
 ```
 
+### Adquirir chave para configurar MAPBOX_API_KEY  (moib !@)
+
+'pk.eyJ1IjoibW9pYnVlbm8iLCJhIjoiY2xnanc3MXp4MDJtdDNubmxxdGJlZGlkcSJ9.se4VlcD6SC226Pklnp8PuQ'
+
+https://account.mapbox.com/auth/signup/
 
 ## Setup Superset
 ```sh
