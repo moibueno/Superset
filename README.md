@@ -56,7 +56,8 @@ python3 config.py
 
 https://account.mapbox.com/auth/signup/
 
-## Setup Superset
+## Setup Superset  
+/home/moibueno/.local/lib/python3.8/site-packages/superset/superset_config.py  
 ```sh
 # Superset specific config
 ROW_LIMIT = 5000
